@@ -33,6 +33,7 @@ function sortFriends () {
 
 function addFriend () {
 	var newFriend = document.createElement("div");
-	newFriend.innerHTML = "<div class="col s6"><div class="input-field"><input type="text" placeholder="Name" name="friend"></div></div>"
+	newFriend.innerHTML = "<div class=\"col s6\"><div class=\"input-field\"><input type=\"text\" placeholder=\"Name\" name=\"friend\"></div></div>"
+	newFriend.className = "row";	
 	document.getElementById('friends').appendChild(newFriend);
 }

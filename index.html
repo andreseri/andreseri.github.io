@@ -1,22 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>Amigo Secreto</title>
-	<script type="text/javascript" src="app.js"></script>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
+
 <body>
-
-<input type="text" name="friend" id="1"><br>
-<input type="text" name="friend" id="2"><br>
-<input type="text" name="friend" id="3"><br>
-<input type="text" name="friend" id="4"><br>
-<input type="text" name="friend" id="5"><br>
-<input type="text" name="friend" id="6"><br>
-<input type="text" name="friend" id="7"><br>
-<input type="text" name="friend" id="8"><br>
-
-<button onclick="getFriends()">Sort!</button>
-
+	<header>
+		<nav class="top-nav">
+			<div class="nav-wrapper">
+				<div class="container">
+					<a href="" class="brand-logo">Friends</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+	<div class="container">
+			<div class="row">
+				<div class="col s12">
+				</div>
+			</div>
+		<div id="friends">
+			<div class="row">
+				<div class="col s6">
+					<div class="input-field">
+						<input type="text" placeholder="Name" name="friend" id="1">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<div class="input-field">
+						<input type="text" placeholder="Name" name="friend" id="2">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<div class="input-field">
+						<input type="text" placeholder="Name" name="friend" id="3">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col s6">
+					<div class="input-field">
+						<input type="text" placeholder="Name" name="friend" id="4">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s1 offset-s11">
+				<a href="javascript:;" class="btn-floating btn-large waves-effect waves-light red" onClick="addFriend()"><i class="material-icons">add</i></a>
+			</div>
+		</div>
+		<div class="row">
+			<button class="btn waves-effect waves-light" name="action" onClick="getFriends()">Go
+				<i class="material-icons right">send</i>
+			</button>
+		</div>
+	</div>
+	</main>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
