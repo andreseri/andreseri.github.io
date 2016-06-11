@@ -437,7 +437,7 @@ else {
 }( jQuery ));;(function ($) {
 
   // Add posibility to scroll to selected option
-  // usefull for select for example
+  // useful for select for example
   $.fn.scrollTo = function(elem) {
     $(this).scrollTop($(this).scrollTop() - $(this).offset().top + $(elem).offset().top);
     return this;
